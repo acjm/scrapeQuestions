@@ -12,10 +12,10 @@
 
 #Run
 
-> git clone https://github.com/acjm/scrapeQuestions.git
-> cd nodeServer
-> npm install
-> npm start
+- git clone https://github.com/acjm/scrapeQuestions.git
+- cd nodeServer
+- npm install
+- npm start
 
 #The application will be served on :3600 
 
