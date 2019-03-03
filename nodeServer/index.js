@@ -89,10 +89,15 @@ try {
 
 // read json file
 const contents = fs.readFileSync('data.json');
+const contentsFull = fs.readFileSync('datafull.json');
 const api = JSON.parse(contents);
+const apiFull = JSON.parse(contentsFull);
 // Execute the expression
 app.get('/api/titles', (req, res) => {
   res.send(api);
+});
+app.get('/api/titlesfull', (req, res) => {
+  res.send(apiFull);
 });
 // server
 app.listen(port, () => {
